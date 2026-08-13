@@ -23,11 +23,11 @@ public class Chaos {
     public static void setup(CringleBosses cb, ItemGroup ig, Research chaosResearch) {
 
         SlimefunItemStack spectreOfChaos = new SlimefunItemStack("CRINGLE_SPECTRE_OF_CHAOS", Material.ENDERMAN_SPAWN_EGG,
-                "&5混沌幽灵丹",
+                "&5Esencia del espectro del caos",
                 "",
-                "&7用于召唤混沌幽灵",
+                "&7Sirve para invocar al espectro del caos",
                 "",
-                "&c必须在合适的召唤祭坛上使用");
+                "&cDebe usarse sobre un altar de invocación adecuado");
 
         ItemStack[] spectreRecipe = {
                 new ItemStack(Material.END_CRYSTAL),        SlimefunItems.ENDER_RUNE,                               new ItemStack(Material.END_CRYSTAL),
@@ -39,11 +39,11 @@ public class Chaos {
 
 
         SlimefunItemStack chaosBell = new SlimefunItemStack("CRINGLE_CHAOS_BELL", Material.BELL,
-                "&4幽魂钟",
+                "&4Campana espectral",
                 "",
-                "&f迷惑并显示附近玩家",
+                "&fConfunde y revela a los jugadores cercanos",
                 "",
-                "&7不影响敲钟人自身");
+                "&7No afecta a quien toca la campana");
 
         ItemStack[] recipe = {
                 Souls.SOUL_OF_MADNESS,              SlimefunItems.TALISMAN_MAGICIAN,        Souls.SOUL_OF_MADNESS,
@@ -58,7 +58,7 @@ public class Chaos {
                 new PotionEffect(PotionEffectType.BLINDNESS, 100, 2)
         );
 
-        Bell bell = new Bell("&4幽魂钟", potionEffects, ig, chaosBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&4Campana espectral", potionEffects, ig, chaosBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
         chaosResearch.addItems(spectre, bell);

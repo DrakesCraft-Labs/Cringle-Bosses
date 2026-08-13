@@ -18,13 +18,13 @@ public class Rogue {
     public static void setup(CringleBosses cb, ItemGroup ig, Research research) {
 
         SlimefunItemStack rogueBell = new SlimefunItemStack("CRINGLE_ROGUE_BELL", Material.BELL,
-                "&a罪恶之钟",
+                "&aCampana del pecado",
                 "",
-                "&f他曾经是世上最邪恶的人",
-                "&f现在它为了赎罪",
-                "&f便以神的名义带给人们救赎",
+                "&fFue el hombre más malvado del mundo",
+                "&fAhora busca redimirse",
+                "&fy trae la salvación en nombre de los dioses",
                 "",
-                "&7不影响敲钟人自身");
+                "&7No afecta a quien toca la campana");
 
         ItemStack[] recipe = {
                 Souls.FADING_SOUL,              SlimefunItems.TALISMAN_TRAVELLER,       Souls.FADING_SOUL,
@@ -37,7 +37,7 @@ public class Rogue {
                 new PotionEffect(PotionEffectType.JUMP_BOOST, 600, 3)
         );
 
-        Bell bell = new Bell("&a罪恶之钟", potionEffects, ig, rogueBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&aCampana del pecado", potionEffects, ig, rogueBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
         research.addItems(bell);
