@@ -1,13 +1,13 @@
 package me.crashcringle.cringlebosses;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.items.groups.NestedItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.groups.SubItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
 import me.crashcringle.cringlebosses.CringleBosses;
 import me.crashcringle.cringlebosses.chaos.Chaos;
 import me.crashcringle.cringlebosses.corrupt.Corrupt;
@@ -25,15 +25,15 @@ import org.bukkit.inventory.ItemStack;
 
 public class Setup {
     public static SlimefunItemStack SUMMONING_ALTAR = new SlimefunItemStack("CRINGLE_SUMMONING_ALTAR", Material.ENCHANTING_TABLE,
-            "&4召唤祭坛",
+            "&4Altar de invocación",
             "",
-            "&c一种多方块式的祭坛",
-            "&c用于召唤各种Boss");
+            "&cUn altar de varios bloques",
+            "&cSe utiliza para convocar a variosBoss");
 
     public static final SlimefunItemStack SUMMONING_PEDESTAL = new SlimefunItemStack("CRINGLE_SUMMONING_PEDESTAL", Material.RESPAWN_ANCHOR,
-            "&4召唤基座",
+            "&4Pedestal de invocación",
             "",
-            "&c召唤祭坛的组成部分");
+            "&cComponentes del Altar de Invocación");
     
     private NestedItemGroup nestedItemGroup;
     private ItemGroup resourcesItemGroup;
@@ -55,26 +55,26 @@ public class Setup {
 
     public Setup() {
 
-        ItemStack itemGroupItem = new CustomItemStack(Material.SOUL_CAMPFIRE, "&7混沌Boss", "", "&a> 单击打开");
+        ItemStack itemGroupItem = new CustomItemStack(Material.SOUL_CAMPFIRE, "&7caosBoss", "", "&a> Haga clic para abrir");
 
         nestedItemGroup = new NestedItemGroup(new NamespacedKey(CringleBosses.inst(), "cringle_bosses"), itemGroupItem);
-        resourcesItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "cringle_resources"), nestedItemGroup, new CustomItemStack(Material.LANTERN, "&6合成配方"));
-        chaosItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "chaos"), nestedItemGroup, new CustomItemStack(Material.REDSTONE, "&4混沌"));
-        primeItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "primordial"), nestedItemGroup, new CustomItemStack(Material.TRIDENT, "&b寒武"));
-        rogueItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "rogue"), nestedItemGroup, new CustomItemStack(Material.WITHER_ROSE, "&2罪恶"));
-        holyItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "holy"), nestedItemGroup, new CustomItemStack(Material.HONEYCOMB, "&e神圣"));
-        corruptItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "corrupt"), nestedItemGroup, new CustomItemStack(Material.FIRE_CHARGE, "&5腐化"));
-        oldItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "old"), nestedItemGroup, new CustomItemStack(Material.TOTEM_OF_UNDYING, "&8古迹"));
+        resourcesItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "cringle_resources"), nestedItemGroup, new CustomItemStack(Material.LANTERN, "&6Fórmula sintética"));
+        chaosItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "chaos"), nestedItemGroup, new CustomItemStack(Material.REDSTONE, "&4caos"));
+        primeItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "primordial"), nestedItemGroup, new CustomItemStack(Material.TRIDENT, "&bcambriano"));
+        rogueItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "rogue"), nestedItemGroup, new CustomItemStack(Material.WITHER_ROSE, "&2pecado"));
+        holyItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "holy"), nestedItemGroup, new CustomItemStack(Material.HONEYCOMB, "&esagrado"));
+        corruptItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "corrupt"), nestedItemGroup, new CustomItemStack(Material.FIRE_CHARGE, "&5corrupto"));
+        oldItemGroup = new SubItemGroup(new NamespacedKey(CringleBosses.inst(), "old"), nestedItemGroup, new CustomItemStack(Material.TOTEM_OF_UNDYING, "&8monumentos"));
 
 
         NamespacedKey researchKey = new NamespacedKey(CringleBosses.inst(), "Chaos_bosses_research");
-        soulResearch = new Research(researchKey, 12600001, "灵魂的真理", 45);
-        chaosResearch = new Research(researchKey, 12600002, "混沌的脚步声", 60);
-        primeResearch = new Research(researchKey, 12600003, "祖上的手稿", 65);
-        holyResearch = new Research(researchKey, 12600004, "上帝的言语", 56);
-        oldResearch = new Research(researchKey, 12600005, "古老的故事", 82);
-        rogueResearch = new Research(researchKey, 12600006, "遗忘在世间", 94);
-        corruptResearch = new Research(researchKey, 12600007, "知识的禁果", 100);
+        soulResearch = new Research(researchKey, 12600001, "verdad del alma", 45);
+        chaosResearch = new Research(researchKey, 12600002, "Pasos caóticos", 60);
+        primeResearch = new Research(researchKey, 12600003, "Manuscritos de antepasados", 65);
+        holyResearch = new Research(researchKey, 12600004, "palabra de dios", 56);
+        oldResearch = new Research(researchKey, 12600005, "historia antigua", 82);
+        rogueResearch = new Research(researchKey, 12600006, "olvidado en el mundo", 94);
+        corruptResearch = new Research(researchKey, 12600007, "el fruto prohibido del conocimiento", 100);
 
         ItemStack[] altarRecipe = {
                 null,                                       SlimefunItems.ANCIENT_ALTAR,                          null,

@@ -1,9 +1,9 @@
 package me.crashcringle.cringlebosses.old;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
 import me.crashcringle.cringlebosses.CringleBosses;
 import me.crashcringle.cringlebosses.other.Bell;
 import me.crashcringle.cringlebosses.other.Souls;
@@ -18,11 +18,11 @@ public class Old {
     public static void setup(CringleBosses cb, ItemGroup ig, Research research) {
 
         SlimefunItemStack oldBell = new SlimefunItemStack("CRINGLE_OLD_BELL", Material.BELL,
-                "&8古钟",
+                "&8reloj antiguo",
                 "",
-                "&f削弱并显示附近玩家",
+                "&fDebilita y revela jugadores cercanos.",
                 "",
-                "&7不影响敲钟人自身");
+                "&7No afecta al propio campanero.");
 
         ItemStack[] recipe = {
                 Souls.HARDENED_GEL,              SlimefunItems.TALISMAN_WISE,       Souls.PURIFIED_SOUL,
@@ -36,7 +36,7 @@ public class Old {
                 new PotionEffect(PotionEffectType.SLOW, 400, 2)
         );
 
-        Bell bell = new Bell("&8古钟", potionEffects, ig, oldBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&8reloj antiguo", potionEffects, ig, oldBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
         research.addItems(bell);

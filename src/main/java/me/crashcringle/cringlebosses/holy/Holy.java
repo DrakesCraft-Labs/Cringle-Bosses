@@ -1,10 +1,10 @@
 package me.crashcringle.cringlebosses.holy;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
 import me.crashcringle.cringlebosses.CringleBosses;
 import me.crashcringle.cringlebosses.other.Bell;
 import me.crashcringle.cringlebosses.other.Souls;
@@ -20,11 +20,11 @@ public class Holy {
     public static void setup(CringleBosses cb, ItemGroup ig, Research research) {
 
         SlimefunItemStack holyBell = new SlimefunItemStack("CRINGLE_HOLY_BELL", Material.BELL,
-                "&e圣钟",
+                "&esanta campana",
                 "",
-                "&f给予附近玩家增益Buff",
+                "&fDa un beneficio a los jugadores cercanos.Buff",
                 "",
-                "&7不影响敲钟人自身");
+                "&7No afecta al propio campanero.");
 
         ItemStack[] recipe = {
                 Souls.PURIFIED_SOUL,              SlimefunItems.TALISMAN_KNIGHT,       Souls.PURIFIED_SOUL,
@@ -37,7 +37,7 @@ public class Holy {
                 new PotionEffect(PotionEffectType.HEALTH_BOOST, 600, 40)
         );
 
-        Bell bell = new Bell("&e圣钟", potionEffects, ig, holyBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&esanta campana", potionEffects, ig, holyBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
         research.addItems(bell);

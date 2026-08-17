@@ -1,10 +1,10 @@
 package me.crashcringle.cringlebosses.prime;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
 import me.crashcringle.cringlebosses.CringleBosses;
 import me.crashcringle.cringlebosses.other.Bell;
 import me.crashcringle.cringlebosses.other.Souls;
@@ -24,11 +24,11 @@ public class Prime {
     public static void setup(CringleBosses cb, ItemGroup ig, Research primeResearch) {
 
         SlimefunItemStack primordialBell = new SlimefunItemStack("CRINGLE_PRIMORDIAL_BELL", Material.BELL,
-                "&b寒武钟",
+                "&bCampana cámbrica",
                 "",
-                "&f鼓舞附近的玩家",
+                "&fInspira a los jugadores cercanos",
                 "",
-                "&7不影响敲钟人自身");
+                "&7No afecta al propio campanero.");
 
         ItemStack[] recipe = {
                 Souls.HARDENED_GEL,              SlimefunItems.TALISMAN_WARRIOR,       Souls.HARDENED_GEL,
@@ -41,7 +41,7 @@ public class Prime {
                 new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 600, 1)
         );
 
-        Bell bell = new Bell("&b寒武钟", potionEffects, ig, primordialBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&bCampana cámbrica", potionEffects, ig, primordialBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
 

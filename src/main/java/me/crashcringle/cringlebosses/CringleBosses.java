@@ -3,8 +3,8 @@ package me.crashcringle.cringlebosses;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.config.Config;
 
 
 

@@ -1,17 +1,17 @@
 package me.crashcringle.cringlebosses.other;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import io.github.thebusybiscuit.slimefun4.core.attributes.Radioactivity;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.utils.HeadTexture;
-import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
-import io.github.thebusybiscuit.slimefun4.utils.itemstack.ColoredFireworkStar;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
+import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
+import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import com.github.drakescraft_labs.slimefun4.api.researches.Research;
+import com.github.drakescraft_labs.slimefun4.core.attributes.Radioactivity;
+import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import com.github.drakescraft_labs.slimefun4.utils.HeadTexture;
+import com.github.drakescraft_labs.slimefun4.utils.LoreBuilder;
+import com.github.drakescraft_labs.slimefun4.utils.SlimefunUtils;
+import com.github.drakescraft_labs.slimefun4.utils.itemstack.ColoredFireworkStar;
 import me.crashcringle.cringlebosses.CringleBoss;
 import me.crashcringle.cringlebosses.CringleBosses;
 import org.bukkit.Color;
@@ -27,48 +27,48 @@ public class Souls {
     public static final RecipeType REALIX_DROP = new RecipeType(new NamespacedKey(CringleBosses.inst(), "realix_drop"), new CustomItemStack(Material.NETHERITE_SWORD, "&bMob Drop", "", "&rKill the specified Mob Type to obtain this Item"));
 
     public static final SlimefunItemStack SOUL_OF_MADNESS = new SlimefunItemStack("CRINGLE_SOUL_OF_CHAOS", Material.ENDER_EYE,
-                "&5&kll&4狂妄之魂&5&kll",
+                "&5&kll&4Alma arrogante&5&kll",
                         "",
-                        "&5灵魂与你窃窃私语",
-                        "&5你能听见他们的呼唤吗?",
+                        "&5El alma te susurra",
+                        "&5¿Puedes oírlos llamar??",
                         "",
                         "&4&kTheSoulOfChaos");
     public static final SlimefunItemStack CRACKED_SOUL = new SlimefunItemStack("CRINGLE_CRACKED_SOUL", Material.FIRE_CHARGE,
-            "&4破碎之魂",
+            "&4alma rota",
             "",
-            "&6灵魂中被玷污的碎片",
-            "&6摸上去很烫",
+            "&6Los fragmentos contaminados del alma.",
+            "&6Se siente caliente al tacto",
             LoreBuilder.radioactive(Radioactivity.MODERATE),
             LoreBuilder.HAZMAT_SUIT_REQUIRED);
     public static final SlimefunItemStack ROYAL_GEL = new SlimefunItemStack("CRINGLE_ROYAL_GEL", Material.HEART_OF_THE_SEA,
-            "&3皇家凝胶",
+            "&3gel real",
             "",
-            "&6使粘液看上去高贵了起来");
+            "&6Haz que el limo luzca noble");
     public static final SlimefunItemStack HARDENED_GEL = new SlimefunItemStack("CRINGLE_HARDENED_GEL", Material.NAUTILUS_SHELL,
-            "&9硬化凝胶",
+            "&9gel endurecido",
             "",
-            "&b软硬兼施",
-            "&b也许是某种收藏品");
+            "&bUtilice tácticas tanto suaves como duras",
+            "&bTal vez algún tipo de coleccionable.");
     public static final SlimefunItemStack FADING_SOUL = new SlimefunItemStack("CRINGLE_FADING_SOUL", Material.FIREWORK_STAR,
-            "&8隐匿之魂",
+            "&8alma oculta",
             "",
-            "&7来自某些人的灵魂",
-            "&7逐渐地被人淡忘");
+            "&7del alma de alguien",
+            "&7olvidado gradualmente");
     public static final SlimefunItemStack GLISTENING_SOUL = new SlimefunItemStack("CRINGLE_GLISTENING_SOUL", Material.NETHER_STAR,
-            "&9&kll&b闪亮之魂&9&kll",
+            "&9&kll&balma brillante&9&kll",
             "",
-            "&5它的光是多么耀眼!",
-            "&5但它是否真的可燃?");
+            "&5¡Qué deslumbrante es su luz!!",
+            "&5¿Pero es realmente inflamable??");
     public static final SlimefunItemStack PURIFIED_SOUL = new SlimefunItemStack("CRINGLE_PURIFIED_SOUL", Material.HONEYCOMB,
-            "&6&kll&e净化之魂&6&kll",
+            "&6&kll&eAlma purificada&6&kll",
             "",
-            "&6最纯粹的灵魂",
-            "&6带给人间温暖");
+            "&6el alma mas pura",
+            "&6Trae calidez al mundo");
     public static final SlimefunItemStack FADED_SOUL = new SlimefunItemStack("CRINGLE_FADED_SOUL", new ColoredFireworkStar(Color.WHITE,"&8Faded Soul"),
-            "&8暗夜之魂",
+            "&8alma nocturna",
             "",
-            "&7当某人失足于黑暗中",
-            "&7便成为了古老的遗迹");
+            "&7cuando alguien tropieza con la oscuridad",
+            "&7se convirtió en una antigua reliquia");
     public Souls() {
     }
     public static void setup(CringleBosses cb, ItemGroup ig, Research soulsResearch) {
@@ -76,19 +76,19 @@ public class Souls {
         souls.add(new SlimefunItem(ig, SOUL_OF_MADNESS, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.CHEESE.getTexture()), "&5击杀混沌生物"), null,
+                        null, new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.CHEESE.getTexture()), "&5Mata a las criaturas del caos"), null,
                         null, null, null}));
 
         souls.add(new SlimefunItem(ig, CRACKED_SOUL, RecipeType.BARTER_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.PIGLIN_HEAD.getTexture()), "猪灵"), null , new CustomItemStack(Material.NETHERITE_SWORD, "&b生物掉落物", "", "&c杀死腐败生物"),
+                        new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.PIGLIN_HEAD.getTexture()), "cerdo"), null , new CustomItemStack(Material.NETHERITE_SWORD, "&bcaídas de la mafia", "", "&cMata criaturas corruptas"),
                         null, null, null}));
 
         souls.add(new SlimefunItem(ig, FADING_SOUL, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(Material.WITHER_ROSE, "&5杀死失魂生物"), null,
+                        null, new CustomItemStack(Material.WITHER_ROSE, "&5Mata a la criatura sin alma."), null,
                         null, null, null}));
         souls.add(new SlimefunItem(ig, FADED_SOUL, RecipeType.ANCIENT_ALTAR,
                 new ItemStack[] {
@@ -99,13 +99,13 @@ public class Souls {
         souls.add(new SlimefunItem(ig, PURIFIED_SOUL, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(Material.LILY_OF_THE_VALLEY, "&5杀死神圣生物"), null,
+                        null, new CustomItemStack(Material.LILY_OF_THE_VALLEY, "&5Mata a una criatura sagrada"), null,
                         null, null, null}));
 
         souls.add(new SlimefunItem(ig, ROYAL_GEL, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(Material.TRIDENT, "&5杀死寒武生物"), null,
+                        null, new CustomItemStack(Material.TRIDENT, "&5Mata criaturas cámbricas"), null,
                         null, null, null}));
         souls.add(new SlimefunItem(ig, HARDENED_GEL, RecipeType.ANCIENT_ALTAR,
                 new ItemStack[] {

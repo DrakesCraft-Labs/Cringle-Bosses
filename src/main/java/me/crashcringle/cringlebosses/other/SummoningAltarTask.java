@@ -1,6 +1,6 @@
 package me.crashcringle.cringlebosses.other;
 
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
 import me.crashcringle.cringlebosses.Setup;
 import org.bukkit.*;
 import org.bukkit.block.Block;

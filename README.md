@@ -1,20 +1,45 @@
-# Slimefun4 Addon 
-This is an example Repository for a generic Slimefun4 Addon.
-In the top left is a button "Use this template", click this to create your own Addon for Slimefun4 using this basic template.
+<p align="center">
+  <img src="docs/banner.svg" width="100%" alt="CRINGLE-BOSSES Animated Banner" />
+</p>
 
-## How to create your own addon.
-This is a template repository that you can use to create your own Slimefun4 Addon.<br>
-We have also written an extensive step-by-step tutorial which you can find here:<br>
-https://github.com/Slimefun/Slimefun4/wiki/Developer-Guide
+# Cringle-Bosses
 
-## Changing some important things
-Navigate to `src/main/java` and rename the package and the .java File to your liking.<br>
-Suggestion: "me.yourname.yourproject" (all lower case) and "ProjectName.java"<br>
-Example: "me.thebusybiscuit.cooladdon" and "CoolAddon.java"
+Addon de **Slimefun 4** que implementa un sistema ritual de **altares de invocación, fragmentos de almas y encuentros con jefes místicos** (Chaos, Corrupt, Prime, Rogue, Holy y Old). Portado, optimizado y mantenido por **DrakesCraft Labs** para Paper/Purpur 1.21.11 en Java 21.
 
-Navigate to `src/main/resources/plugin.yml` and change the "author" and "main" attributes.
-You may also want to change the description to something meaningful.
+---
 
-Navigate to `pom.xml` and change the group id to "me.%Your name%" and change the artifact id to the name of your Project.
+## 🎯 Objetivo
 
-After that you are good to go, you can now start developing your own Addon for Slimefun4.
+Integrar encuentros de combate desafiantes y rituales de invocación que recompensen a los jugadores con almas místicas, equipamiento legendario y materiales de forja especializados.
+
+---
+
+## ⚡ Características Principales
+
+- **Altares y Pedestales de Invocación**:
+  - Estructuras mágicas que requieren combinar campanas rituales, catalizadores y almas para invocar entidades.
+- **6 Jefes Místicos con Fases Únicas**:
+  - *Chaos*: Ataques aleatorios y distorsión espacial.
+  - *Corrupt*: Proyectiles oscuros y robo de vitalidad.
+  - *Prime*: Resistencia extrema y golpes sísmicos.
+  - *Rogue*: Embestidas veloces y teletransporte.
+  - *Holy*: Destellos de daño radiante y curación.
+  - *Old*: Defensas ancestrales y maldiciones.
+- **Botín Exclusivo**:
+  - Almas selladas, núcleos de poder y armas únicas.
+
+---
+
+## 🛠️ Entorno y Compatibilidad
+
+- **Servidor**: Paper / Purpur 1.21.11
+- **Java**: 21
+- **Dependencias**:
+  - `Slimefun4-Drake`
+
+---
+
+## 📜 Créditos y Origen
+
+- **Autor original**: `crashcringle`
+- **Adaptación y Mantenimiento 1.21.11**: **DrakesCraft Labs**
