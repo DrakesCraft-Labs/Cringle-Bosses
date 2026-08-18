@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/banner.svg" alt="Cringle-Bosses" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Cringle-Bosses/main/banner.svg" alt="Cringle-Bosses" width="100%"></p>
 
 # Cringle-Bosses
 
