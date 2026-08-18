@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Cringle-Bosses/master/docs/banner.svg" width="100%" alt="CRINGLE-BOSSES Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/Cringle-Bosses/master/banner.svg" width="100%" alt="CRINGLE-BOSSES Animated Banner" />
 </p>
 
 # Cringle-Bosses
