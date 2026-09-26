@@ -27,48 +27,48 @@ public class Souls {
     public static final RecipeType REALIX_DROP = new RecipeType(new NamespacedKey(CringleBosses.inst(), "realix_drop"), new CustomItemStack(Material.NETHERITE_SWORD, "&bMob Drop", "", "&rKill the specified Mob Type to obtain this Item"));
 
     public static final SlimefunItemStack SOUL_OF_MADNESS = new SlimefunItemStack("CRINGLE_SOUL_OF_CHAOS", Material.ENDER_EYE,
-                "&5&kll&4Alma soberbia&5&kll",
+                "&5&kll&4Soul of Madness&5&kll",
                         "",
-                        "&5Las almas te susurran",
-                        "&5¿Alcanzas a oír su llamada?",
+                        "&5The souls whisper to you",
+                        "&5Can you hear their call?",
                         "",
                         "&4&kTheSoulOfChaos");
     public static final SlimefunItemStack CRACKED_SOUL = new SlimefunItemStack("CRINGLE_CRACKED_SOUL", Material.FIRE_CHARGE,
-            "&4Alma rota",
+            "&4Cracked Soul",
             "",
-            "&6Un fragmento manchado de un alma",
-            "&6Quema al tocarla",
+            "&6A stained soul fragment",
+            "&6Burns upon touch",
             LoreBuilder.radioactive(Radioactivity.MODERATE),
             LoreBuilder.HAZMAT_SUIT_REQUIRED);
     public static final SlimefunItemStack ROYAL_GEL = new SlimefunItemStack("CRINGLE_ROYAL_GEL", Material.HEART_OF_THE_SEA,
-            "&3Gel real",
+            "&3Royal Gel",
             "",
-            "&6Hace que el limo parezca noble");
+            "&6Makes slime look noble");
     public static final SlimefunItemStack HARDENED_GEL = new SlimefunItemStack("CRINGLE_HARDENED_GEL", Material.NAUTILUS_SHELL,
-            "&9Gel endurecido",
+            "&9Hardened Gel",
             "",
-            "&bDuro y blando a la vez",
-            "&bQuizá sea una pieza de coleccionista");
+            "&bBoth hard and soft",
+            "&bPerhaps a collector's item");
     public static final SlimefunItemStack FADING_SOUL = new SlimefunItemStack("CRINGLE_FADING_SOUL", Material.FIREWORK_STAR,
-            "&8Alma oculta",
+            "&8Fading Soul",
             "",
-            "&7Procede del alma de alguien",
-            "&7y poco a poco cae en el olvido");
+            "&7Originates from someone's soul",
+            "&7slowly fading into oblivion");
     public static final SlimefunItemStack GLISTENING_SOUL = new SlimefunItemStack("CRINGLE_GLISTENING_SOUL", Material.NETHER_STAR,
-            "&9&kll&bAlma reluciente&9&kll",
+            "&9&kll&bGlistening Soul&9&kll",
             "",
-            "&5¡Qué deslumbrante es su luz!",
-            "&5¿Pero de verdad arde?");
+            "&5How dazzling is its light!",
+            "&5Is it truly combustible?");
     public static final SlimefunItemStack PURIFIED_SOUL = new SlimefunItemStack("CRINGLE_PURIFIED_SOUL", Material.HONEYCOMB,
-            "&6&kll&eAlma purificada&6&kll",
+            "&6&kll&ePurified Soul&6&kll",
             "",
-            "&6El alma más pura",
-            "&6Trae calor al mundo");
+            "&6The purest soul",
+            "&6Brings warmth to the world");
     public static final SlimefunItemStack FADED_SOUL = new SlimefunItemStack("CRINGLE_FADED_SOUL", new ColoredFireworkStar(Color.WHITE,"&8Faded Soul"),
-            "&8Alma de la noche",
+            "&8Night Soul",
             "",
-            "&7Cuando alguien se pierde en la oscuridad",
-            "&7acaba convertido en una reliquia antigua");
+            "&7When one loses their way in darkness",
+            "&7they become an ancient relic");
     public Souls() {
     }
     public static void setup(CringleBosses cb, ItemGroup ig, Research soulsResearch) {
@@ -76,19 +76,19 @@ public class Souls {
         souls.add(new SlimefunItem(ig, SOUL_OF_MADNESS, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.CHEESE.getTexture()), "&5Mata criaturas del caos"), null,
+                        null, new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.CHEESE.getTexture()), "&5Kill Chaos creatures"), null,
                         null, null, null}));
 
         souls.add(new SlimefunItem(ig, CRACKED_SOUL, RecipeType.BARTER_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.PIGLIN_HEAD.getTexture()), "Piglin"), null , new CustomItemStack(Material.NETHERITE_SWORD, "&bBotín de criatura", "", "&cMata criaturas corruptas"),
+                        new CustomItemStack(SlimefunUtils.getCustomHead(HeadTexture.PIGLIN_HEAD.getTexture()), "Piglin"), null , new CustomItemStack(Material.NETHERITE_SWORD, "&bMob Drop", "", "&cKill Corrupted creatures"),
                         null, null, null}));
 
         souls.add(new SlimefunItem(ig, FADING_SOUL, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(Material.WITHER_ROSE, "&5Mata criaturas sin alma"), null,
+                        null, new CustomItemStack(Material.WITHER_ROSE, "&5Kill Soulless creatures"), null,
                         null, null, null}));
         souls.add(new SlimefunItem(ig, FADED_SOUL, RecipeType.ANCIENT_ALTAR,
                 new ItemStack[] {
@@ -99,13 +99,13 @@ public class Souls {
         souls.add(new SlimefunItem(ig, PURIFIED_SOUL, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(Material.LILY_OF_THE_VALLEY, "&5Mata criaturas sagradas"), null,
+                        null, new CustomItemStack(Material.LILY_OF_THE_VALLEY, "&5Kill Holy creatures"), null,
                         null, null, null}));
 
         souls.add(new SlimefunItem(ig, ROYAL_GEL, REALIX_DROP,
                 new ItemStack[] {
                         null, null, null,
-                        null, new CustomItemStack(Material.TRIDENT, "&5Mata criaturas primigenias"), null,
+                        null, new CustomItemStack(Material.TRIDENT, "&5Kill Primordial creatures"), null,
                         null, null, null}));
         souls.add(new SlimefunItem(ig, HARDENED_GEL, RecipeType.ANCIENT_ALTAR,
                 new ItemStack[] {

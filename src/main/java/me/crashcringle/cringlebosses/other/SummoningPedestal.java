@@ -55,7 +55,7 @@ import javax.annotation.Nonnull;
  */
 public class SummoningPedestal extends SimpleSlimefunItem<BlockUseHandler> {
 
-    public static final String ITEM_PREFIX = ChatColors.color("&dAltar &3· detección - &e");
+    public static final String ITEM_PREFIX = ChatColors.color("&dAltar &3· Probe - &e");
 
     public SummoningPedestal(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, ItemStack recipeOutput) {
         super(itemGroup, item, recipeType, recipe, recipeOutput);

@@ -18,11 +18,11 @@ public class Old {
     public static void setup(CringleBosses cb, ItemGroup ig, Research research) {
 
         SlimefunItemStack oldBell = new SlimefunItemStack("CRINGLE_OLD_BELL", Material.BELL,
-                "&8Campana antigua",
+                "&8Ancient Bell",
                 "",
-                "&fDebilita y revela a los jugadores cercanos",
+                "&fWeakens and reveals nearby players",
                 "",
-                "&7No afecta a quien toca la campana");
+                "&7Does not affect the ringer");
 
         ItemStack[] recipe = {
                 Souls.HARDENED_GEL,              SlimefunItems.TALISMAN_WISE,       Souls.PURIFIED_SOUL,
@@ -36,7 +36,7 @@ public class Old {
                 new PotionEffect(PotionEffectType.SLOWNESS, 400, 2)
         );
 
-        Bell bell = new Bell("&8Campana antigua", potionEffects, ig, oldBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&8Ancient Bell", potionEffects, ig, oldBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
         research.addItems(bell);

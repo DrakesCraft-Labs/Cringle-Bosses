@@ -24,11 +24,11 @@ public class Prime {
     public static void setup(CringleBosses cb, ItemGroup ig, Research primeResearch) {
 
         SlimefunItemStack primordialBell = new SlimefunItemStack("CRINGLE_PRIMORDIAL_BELL", Material.BELL,
-                "&bCampana primigenia",
+                "&bPrimordial Bell",
                 "",
-                "&fAnima a los jugadores cercanos",
+                "&fInspires nearby players",
                 "",
-                "&7No afecta a quien toca la campana");
+                "&7Does not affect the ringer");
 
         ItemStack[] recipe = {
                 Souls.HARDENED_GEL,              SlimefunItems.TALISMAN_WARRIOR,       Souls.HARDENED_GEL,
@@ -41,7 +41,7 @@ public class Prime {
                 new PotionEffect(PotionEffectType.RESISTANCE, 600, 1)
         );
 
-        Bell bell = new Bell("&bCampana primigenia", potionEffects, ig, primordialBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&bPrimordial Bell", potionEffects, ig, primordialBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
 

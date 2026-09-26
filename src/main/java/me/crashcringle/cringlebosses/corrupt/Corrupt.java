@@ -18,12 +18,12 @@ public class Corrupt {
     public static void setup(CringleBosses cb, ItemGroup ig, Research research) {
 
         SlimefunItemStack corruptBell = new SlimefunItemStack("CRINGLE_CORRUPT_BELL", Material.BELL,
-                "&eCampana corrupta",
+                "&eCorrupt Bell",
                 "",
-                "&fMarca a los jugadores de alrededor",
-                "&fy aplica el efecto de corrupción",
+                "&fMarks nearby players",
+                "&fand applies the corruption effect",
                 "",
-                "&7No afecta a quien toca la campana");
+                "&7Does not affect the ringer");
 
         ItemStack[] recipe = {
                 Souls.CRACKED_SOUL,              SlimefunItems.TALISMAN_LAVA,       Souls.CRACKED_SOUL,
@@ -37,7 +37,7 @@ public class Corrupt {
                 new PotionEffect(PotionEffectType.ABSORPTION, 1200, 20)
         );
 
-        Bell bell = new Bell("&5Campana &4corrupta", potionEffects, ig, corruptBell, RecipeType.ANCIENT_ALTAR, recipe);
+        Bell bell = new Bell("&5Corrupt &4Bell", potionEffects, ig, corruptBell, RecipeType.ANCIENT_ALTAR, recipe);
         bell.register(cb);
 
         research.addItems(bell);
