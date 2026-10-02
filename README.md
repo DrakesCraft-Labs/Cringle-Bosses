@@ -40,12 +40,10 @@ bajara el de upstream encima, dejaría de cargar. Las actualizaciones se desplie
 **El rastreador de fallos apunta aquí**, no al repositorio original: un fallo de esta versión
 casi nunca es un fallo de allí.
 
-## ⚖️ Upstream Attribution & License / Licencia y Créditos
+---
 
-- **Original Project / Upstream**: Slimefun4 Community Addon.
-- **Port & Maintenance**: DrakesCraft Labs team (Compatibility for Paper / Purpur 1.21.11).
-- **License**: GPL-3.0 / MIT.
-- **Source Code**: [GitHub Repository](https://github.com/DrakesCraft-Labs/Cringle-Bosses)
-- **Support & Issues**: [GitHub Issues](https://github.com/DrakesCraft-Labs/Cringle-Bosses/issues) | [Discord](https://discord.gg/rv3vtXZTk7)
+## 📄 License & Intellectual Property
 
-*This project is an open-source derivative work maintained by DrakesCraft Labs under the terms of its original license. All original assets and concepts belong to their respective creators.*
+Copyright © 2026 [**JackStar6677-1**](https://github.com/JackStar6677-1) · [**DrakesCraft Labs**](https://github.com/DrakesCraft-Labs). All Rights Reserved.
+
+This software is **Source-Available** for public inspection and technical audit. Redistribution, commercial repackaging, or unauthorized derivative distribution without explicit written permission from the author is strictly prohibited.
